@@ -1,6 +1,6 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
+title:            Red Moses
+description:      My thoughts, ideas and works
+disqus_shortname: redmoses
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
@@ -9,33 +9,33 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  name:           Red Moses
+  avatar:         redmoses.jpg
+  bio:            "DevOps engineer with a passion for coding."
+  email:          musa@redmoses.me
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
+  twitter: musanasrullah
+  facebook: musa.dhk
+  github: redmoses
+  stackexchange: redmoses
+  linkedin: redmoses
+  instagram:
+  flickr:
+  tumblr:
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:    +MusaNasrullah
 
 # Background image to be tiled on all pages
 background: 
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Dhaka
 future:      true
 highlighter: pygments
 markdown:    kramdown
