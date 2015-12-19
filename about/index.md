@@ -1,33 +1,38 @@
 ---
 layout: page
-title: About the Jekyll Theme
+title: About Me
 image:
   feature: bg.jpg
   credit: Red Moses
 comments: false
-modified: 2014-12-24
+modified: 2015-12-19
 ---
 
-They say three times the charm, so here is another free responsive Jekyll blog theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around.
+# My professional biography
 
-If you've used any of [my other themes](http://mademistakes.com/work/jekyll-themes/) most of this should be familiar territory...
+I'm currently working as Senior DevOps Engineer at Appdragon
 
-## What HPSTR brings to the table:
+## My Experiences:
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Built-in support for Sass courtesy of Jekyll 2.x.
-* Optional [Disqus](http://disqus.com) comments.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy.
-
-<div markdown="0"><a href="{{ site.url }}/theme-setup/" class="btn btn-info">Theme Setup</a> <a href="https://github.com/mmistakes/hpstr-jekyll-theme" class="btn btn-success">Download HPSTR</a></div>
-
-[^1]: Example: *domain.com/category-name/post-title*
+* Disaster recovery strategies to meet 99.99% uptime requirements
+* MySQL master-slave cluster with auto and manual failover strategies
+* RabbitMQ clustering with HaProxy load balancer
+* Implemented Docker for deploying applications
+* Dockerized existing application for efficient deployment
+* Configured private Docker registry
+* Code update automation scripts
+* Monitoring via Zabbix along with mobile app notifications
+* Advanced OpenVPN deployment
+* Performance tuning with Nginx
+* Deployed Soap service written in Java using Maven and Tomcat
+* Disaster recovery strategies to meet 99.99% uptime requirements
+* MySQL master-slave cluster with auto and manual failover strategies
+* RabbitMQ clustering with HaProxy load balancer
+* Implemented Docker for deploying applications
+* Dockerized existing application for efficient deployment
+* Configured private Docker registry
+* Code update automation scripts
+* Monitoring via Zabbix along with mobile app notifications
+* Advanced OpenVPN deployment
+* Performance tuning with Nginx
+* Deployed Soap service written in Java using Maven and Tomcat

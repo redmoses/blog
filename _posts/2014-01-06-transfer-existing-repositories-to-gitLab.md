@@ -2,7 +2,6 @@
 layout: post
 title: Transfer existing Repositories to GitLab
 description: "Moving from Gerrit to Gitlab"
-modified: 2014-01-06
 tags: [existing repositories, gitlab, gitlab 6, gitlab 7, import, repositories]
 ---
 
