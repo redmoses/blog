@@ -5,34 +5,114 @@ image:
   feature: bg.jpg
   credit: Red Moses
 comments: false
-modified: 2015-12-19
+modified: 2015-12-19T00:00:00.000Z
 ---
 
 # My professional biography
+I am a technology enthusiast and I see team work, professionalism and leadership as my core strengths. I'm currently working as Senior DevOps Engineer at Appdragon.
 
-I'm currently working as Senior DevOps Engineer at Appdragon
-
-## My Experiences:
-
-* Disaster recovery strategies to meet 99.99% uptime requirements
-* MySQL master-slave cluster with auto and manual failover strategies
-* RabbitMQ clustering with HaProxy load balancer
-* Implemented Docker for deploying applications
-* Dockerized existing application for efficient deployment
-* Configured private Docker registry
-* Code update automation scripts
-* Monitoring via Zabbix along with mobile app notifications
-* Advanced OpenVPN deployment
-* Performance tuning with Nginx
-* Deployed Soap service written in Java using Maven and Tomcat
-* Disaster recovery strategies to meet 99.99% uptime requirements
-* MySQL master-slave cluster with auto and manual failover strategies
-* RabbitMQ clustering with HaProxy load balancer
-* Implemented Docker for deploying applications
-* Dockerized existing application for efficient deployment
-* Configured private Docker registry
-* Code update automation scripts
-* Monitoring via Zabbix along with mobile app notifications
-* Advanced OpenVPN deployment
-* Performance tuning with Nginx
-* Deployed Soap service written in Java using Maven and Tomcat
+## Skills:
+<ul class="skills-list">
+      <li class="skill first">
+              <span class="skill-name">System Administration</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">System Deployment</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Virtual Machines</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Linux</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Ubuntu</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">CentOS</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Oracle Enterprise Linux</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">DevOps</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Software Deployment</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Nginx</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Apache 2</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Load Balancing</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">GitLab</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Python</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Django</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Database Admin</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">MySQL</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Oracle Database 10g</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Network Administration</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">C#</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">ASP.NET MVC</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Entity Framework</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Umbraco</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Joomla</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Teamwork</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Java</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Bash</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Databases</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Nagios</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Networking</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Tomcat</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Software Development</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Web Applications</span>
+      </li>
+      <li class="skill">
+              <span class="skill-name">Servers</span>
+      </li>
+  </ul>
