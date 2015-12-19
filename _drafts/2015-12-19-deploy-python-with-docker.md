@@ -2,6 +2,7 @@
 layout: post
 title: Deploy Python With Docker
 description: "Playing around with docker"
+status: draft
 tags: [ docker, python, Makefile, gunicorn, flask ]
 ---
 
