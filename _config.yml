@@ -15,7 +15,7 @@ owner:
   email:          musa@redmoses.me
   # Social networking links used in footer. Update and remove as you like.
   twitter: musanasrullah
-  facebook: musa.dhk
+  facebook:
   github: redmoses
   stackexchange:
   linkedin: redmoses
@@ -23,7 +23,7 @@ owner:
   flickr:
   tumblr:
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +MusaNasrullah
+  google_plus:
 
 # Background image to be tiled on all pages
 background:
