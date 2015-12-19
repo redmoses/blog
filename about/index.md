@@ -3,8 +3,7 @@ layout: page
 title: About the Jekyll Theme
 image:
   feature: bg.jpg
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
+  credit: Red Moses
 comments: false
 modified: 2014-12-24
 ---

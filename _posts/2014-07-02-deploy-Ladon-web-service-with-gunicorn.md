@@ -75,4 +75,4 @@ From *lines 16-31*, I am just inheriting from the Gunicorn base application clas
 
 And finally there's the main method which runs our application. You must notice that I'm passing the "*application*" variable (*line 45*) I had previously declared on *line 9* with the some basic configurations like ip address and ports to bind to start the application.
 
-To run the application just use "python server.py" and it would start running on port 5656. To access the application visit [http://localhost:5656](http://localhost:5656) from your browser. 
+To run the application just use "python server.py" and it would start running on port 5656. To access the application visit [http://localhost:5656](http://localhost:5656) from your browser.
