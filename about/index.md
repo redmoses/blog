@@ -8,16 +8,24 @@ comments: false
 modified: 2015-12-19T00:00:00.000Z
 ---
 
-# My professional biography
 I am a technology enthusiast and I see team work, professionalism and leadership as my core strengths. I'm currently working as Senior DevOps Engineer at Appdragon.
 
-## Skills:
 
-| >> System Administration | >> System Development | >> Software Development
+## Experiences
+
+| >> Senior DevOps Engineer @ **Appdragon** | >> February 2015 - Present  |
+| >> DevOps Engineer @ **Appdragon**        | >> July 2014 - January 2015 |
+| >> System Administrator @ **ZSS**         | >> Dec 2008 - January 2014  |
+
+------
+
+## Skills
+
+| >> System Administration | >> Software Development | >> Security Management
 | >> Docker | >> Ansible | >> Zabbix
 | >> JavaScript | >> Node.js | >> Angular
 | >> Python | >> Django | >> Flask
-| >> Debian | >> Ubuntu | >> CentOS
+| >> MySql | >> Postgres | >> MongoDb
+| >> Ubuntu | >> VM Ware Esxi Server | >> VM Ware Esxi Client
 | >> Nginx | >> Apache2 | >> HaProxy
 | >> Load Balancing | >> Reverse Proxy | >> Whitelisting
-| >> MySql | >> Postgres | >> MongoDb
