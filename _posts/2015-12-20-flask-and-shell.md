@@ -188,7 +188,7 @@ As we have not defined any port for the application it will run on the default
 port 5000. To change this you may have a look at [here](http://stackoverflow.com/a/29079598/2894655).
 
 So you can find the application at [http://SERVER_IP:5000](#). And the 
-the status updates should be available at [http://SERVER_IP:5000/stats](#).
+the status updates should be available at [http://SERVER_IP:5000/status/](#).
 
 
 I hope you've enjoyed the post and it was of help to you. Please feel free 
