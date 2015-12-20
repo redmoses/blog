@@ -8,3 +8,4 @@ Gemfile.lock
 .sass-cache
 .idea/
 .deploy/
+_deploy.yml
