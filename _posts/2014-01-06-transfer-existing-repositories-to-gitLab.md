@@ -5,7 +5,14 @@ description: "Moving from Gerrit to Gitlab"
 tags: [existing repositories, gitlab, gitlab 6, gitlab 7, import, repositories]
 ---
 
-The developer team in my office were using Gerrit Code Review along with git-web before migrating to GitLab. So we had to transfer all our existing repositories to GitLab. This tutorial can also be used for migrating from other git based issue tracking systems. The GitLab documentation says to put all your bare repositories, the ".git" directories, into this location - "/home/git/repositories" and then use the import command. But this doesn't do the job, it only creates blank empty projects under the Admin group with no source files or previous issues. So to solve this, just follow the steps below -
+The developer team in my office were using Gerrit Code Review along with git-web before migrating to GitLab. 
+So we had to transfer all our existing repositories to GitLab. This tutorial can also be used for migrating 
+from other git based issue tracking systems. <!-- more -->
+
+The GitLab documentation says to put all your bare repositories, 
+the ".git" directories, into this location - "/home/git/repositories" and then use the import command. But 
+this doesn't do the job, it only creates blank empty projects under the Admin group with no source files or 
+previous issues. So to solve this, just follow the steps below -
 
 {% highlight bash %}
 # You should change $newdir into something you prefer

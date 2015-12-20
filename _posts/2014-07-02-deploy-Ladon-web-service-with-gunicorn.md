@@ -5,7 +5,9 @@ description: "Using Gunicorn to deploy Ladon web service."
 tags: [deploy, gunicorn, ladon, python]
 ---
 
-Before starting I would like to mention that this article is not intended to teach Ladon or Gunicorn. It is rather for people who have worked their way around each of these libraries individually and are now seeking for a way to use them together.
+Before starting I would like to mention that this article is not intended to teach Ladon or Gunicorn. 
+It is rather for people who have worked their way around each of these libraries individually and are 
+now seeking for a way to use them together. <!-- more -->
 
 (You need to have Ladon and Gunicorn libraries installed in your environment)
 I am using the example given on Ladon's website. Let this be our **calculator.py**:

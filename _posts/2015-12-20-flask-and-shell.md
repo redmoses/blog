@@ -7,8 +7,7 @@ tags: [flask, subprocess, python, shell, scripts, secured, ip, whitelist, superv
 ---
 
 [Flask](http://flask.pocoo.org/) is an amazingly lightweight framework, and to my opinion its a great option 
-for writing small simple applications in Python.
-
+for writing small simple applications in Python. <!-- more -->
 
 ## Background
 
