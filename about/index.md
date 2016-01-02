@@ -11,13 +11,11 @@ modified: 2015-12-19T00:00:00.000Z
 I am a technology enthusiast and I see team work, professionalism and leadership as my core strengths. I'm currently working as Senior DevOps Engineer at Appdragon.
 
 
-<header><h1>Experience</h1></header>
 <ul class="entry-content" style="list-style: none">
     <li class="term success"><strong>Senior DevOps Engineer @ <a href="http://www.iappdragon.com">Appdragon</a></strong><br>February 2015 - Present</li>
     <li><strong>DevOps Engineer @ <a href="http://www.iappdragon.com">Appdragon</a></strong><br>July 2014 - January 2015</li>
     <li><strong>System Administrator @ <a href="http://www.zssbd.com">ZS Solutions Ltd.</a></strong><br>December 2008 - January 2014</li>
 </ul>
-<header><h1>Skills</h1></header>
 <div class="entry-content">
     <ul class="entry-meta inline-list">
         <li><a class="tag"><span class="term success">System Administration</span></a></li>
