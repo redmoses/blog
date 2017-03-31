@@ -1,11 +1,3 @@
----
-layout: post
-title: Flask and Shell
-date: 2015-12-20T13:28:11+06:00
-description: Using Flask to run shell commands
-tags: [flask, subprocess, python, shell, scripts, secured, ip, whitelist, supervisor, ubuntu]
----
-
 [Flask](http://flask.pocoo.org/) is an amazingly lightweight framework, and to my opinion its a great option 
 for writing small simple applications in Python. <!-- more -->
 
@@ -44,7 +36,7 @@ To go along with this tutorial you must have the following installed in your sys
 
 To prepare your virtual environment use the following commands - 
 
-{% highlight bash %}
+~~~bash
 
 # go to your workspace directory
 cd ~/workspace/
@@ -59,14 +51,14 @@ pip install flask
 # create src and logs directory
 mkdir src logs
 
-{% endhighlight %}
+~~~
 
 ### Prepare a sample database
 
 As we would be running a mysql query we first need to prepare a sample database for our task. To create a database do 
 the following,
 
-{% highlight bash %}
+~~~bash
 
 # create the database 
 mysql -u root -p -e "CREATE DATABASE flasktest; GRANT ALL ON flasktest.* TO flaskuser@localhost IDENTIFIED BY 'flask123'; FLUSH PRIVILEGES"
@@ -77,11 +69,11 @@ mysql -uflaskuser -pflask123 -e "INSERT INTO flasktest.tasks (task_title, task_s
 mysql -uflaskuser -pflask123 -e "INSERT INTO flasktest.tasks (task_title, task_status) VALUES ('Task 2', 'Pending');"
 mysql -uflaskuser -pflask123 -e "INSERT INTO flasktest.tasks (task_title, task_status) VALUES ('Task 3', 'Failed');"
 
-{% endhighlight %}
+~~~
 
 Now to check whether the database and table creations all went okay do the following,
 
-{% highlight bash %}
+~~~bash
 
 mysql -uflaskuser -pflask123 -e "USE flasktest; SELECT COUNT(*) FROM tasks WHERE task_status='Success';"
 
@@ -90,30 +82,79 @@ mysql -uflaskuser -pflask123 -e "USE flasktest; SELECT COUNT(*) FROM tasks WHERE
 +----------+
 | COUNT(*) |
 +----------+
-|        1 |
+| 1 |
 +----------+
 
-{% endhighlight %}
+~~~
 
 You may run the commands with where statements for 'Pending' and 'Failed' as well just to make sure. All the 
 queries should give the same result.
-
 
 ### The code
 
 Now create a file called **app.py** inside the src directory,
 
-{% highlight bash %}
+~~~bash
 
 touch ~/workspace/flaskshell/src/app.py
 
-{% endhighlight %}
+~~~
 
 Inside the file put in the below code -
 
-{% gist redmoses/347a2ad006a518f09fbc %}
+~~~python
+from flask import Flask
+from flask import request
+import subprocess
 
-<br>
+
+app = Flask('flaskshell')
+ip_whitelist = ['192.168.1.2', '192.168.1.3']
+query_success = "SELECT COUNT(*) FROM flasktest.tasks WHERE task_status='Success'"
+query_pending = "SELECT COUNT(*) FROM flasktest.tasks WHERE task_status='Pending'"
+query_failed = "SELECT COUNT(*) FROM flasktest.tasks WHERE task_status='Failed'"
+
+
+def valid_ip():
+    client = request.remote_addr
+    if client in ip_whitelist:
+        return True
+    else:
+        return False
+
+
+@app.route('/status/')
+def get_status():
+    if valid_ip():
+        command_success = "mysql -uflaskuser -pflask123 -e '{0}'".format(
+            query_success)
+        command_pending = "mysql -uflaskuser -pflask123 -e '{0}'".format(
+            query_pending)
+        command_failed = "mysql -uflaskuser -pflask123 -e '{0}'".format(
+            query_failed)
+
+        try:
+            result_success = subprocess.check_output(
+                [command_success], shell=True)
+            result_pending = subprocess.check_output(
+                [command_pending], shell=True)
+            result_failed = subprocess.check_output(
+                [command_failed], shell=True)
+        except subprocess.CalledProcessError as e:
+            return "An error occurred while trying to fetch task status updates."
+
+        return 'Success %s, Pending %s, Failed %s' % (result_success, result_pending, result_failed)
+    else:
+        return """<title>404 Not Found</title>
+               <h1>Not Found</h1>
+               <p>The requested URL was not found on the server.
+               If you entered the URL manually please check your
+               spelling and try again.</p>""", 404
+
+
+if __name__ == '__main__':
+    app.run()
+~~~
 
 > **Line 7** >> This is the array for the white listed ips. 
 > You should replace the ips according to your needs. 
@@ -151,35 +192,29 @@ Define a program on supervisor.
 
 Create a new supervisor config file,
 
-{% highlight bash %}
-
+~~~bash
 sudo vim /etc/supervisor/conf.d/flaskshell.conf
-
-{% endhighlight %}
+~~~
 
 Copy and paste the following code in the file. I'm assuming you have put the 
 app in the location - **/home/user/workspace/flaskshell** . You must change 
 this value accordingly.
 
-{% highlight bash %}
-
+~~~bash
 [program:stats]
 directory = /home/user/workspace/flaskshell/src
 command = /home/user/workspace/flaskshell/bin/python app.py
 redirect_stderr = true
 stdout_logfile = /home/user/workspace/flaskshell/logs/out.log
 stderr_logfile = /home/user/workspace/flaskshell/logs/error.log
-
-{% endhighlight %}
+~~~
 
 Now you should update the supervisor config and start the application
 
-{% highlight bash %}
-
+~~~bash
 sudo supervisorctl update stats
 sudo supervisorctl start stats
-
-{% endhighlight %}
+~~~
 
 ## Accessing the application
 
